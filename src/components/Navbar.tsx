@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FileDown,
@@ -67,10 +68,16 @@ export default function Navbar() {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="flex items-center gap-2 font-display font-bold tracking-tight text-white hover:text-violet-300 transition-colors"
+          className="flex items-center gap-2.5 font-display font-bold tracking-tight text-white hover:text-violet-300 transition-colors"
         >
-          <div className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-gradient-to-tr from-violet-600 to-cyan-500 text-white font-mono text-xs font-black shadow-md shadow-violet-500/30">
-            BP
+          <div className="relative h-7 w-7 sm:h-8 sm:w-8 rounded-full overflow-hidden border border-violet-500/40 shadow-md shadow-violet-500/30">
+            <Image
+              src="/profile.jpg"
+              alt="Bhanu Pratap Singh"
+              fill
+              className="object-cover object-top"
+              sizes="32px"
+            />
           </div>
           <span className="hidden sm:inline-block text-sm font-semibold tracking-tight">
             Bhanu<span className="text-violet-400">.dev</span>
@@ -168,3 +175,4 @@ export default function Navbar() {
     </header>
   );
 }
+

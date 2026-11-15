@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import {
   Code2,
@@ -12,6 +13,7 @@ import {
   MapPin,
   CheckCircle,
   ExternalLink,
+  User,
 } from "lucide-react";
 import { PERSONAL_INFO, STATS } from "@/data/portfolioData";
 
@@ -99,12 +101,47 @@ export default function About() {
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {/* Main Bio Card (spans 2 columns & 2 rows) */}
+          {/* Portrait Bento Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="md:col-span-2 lg:col-span-2 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 backdrop-blur-xl relative overflow-hidden flex flex-col justify-between group hover:border-violet-500/40 transition-colors"
+            className="md:col-span-1 lg:col-span-1 rounded-3xl border border-white/10 bg-white/[0.03] overflow-hidden relative group hover:border-violet-500/40 transition-all min-h-[380px] sm:min-h-[420px] flex flex-col justify-end p-5"
+          >
+            <Image
+              src="/profile.jpg"
+              alt="Bhanu Pratap Singh"
+              fill
+              className="object-cover object-top filter brightness-[0.98] contrast-[1.02] transition-transform duration-700 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 320px"
+            />
+            {/* Gradient Vignette */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f] via-[#090a0f]/40 to-transparent" />
+
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/20 px-2.5 py-0.5 text-[10px] font-mono text-emerald-300 backdrop-blur-md mb-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>B.Tech CSE • LPU</span>
+              </div>
+              <h3 className="text-xl font-bold font-display text-white">
+                Bhanu Pratap Singh
+              </h3>
+              <p className="text-xs text-zinc-300 font-mono mt-0.5">
+                Full-Stack &amp; GenAI Engineer
+              </p>
+              <div className="mt-3 flex items-center justify-between pt-2 border-t border-white/10 text-[11px] font-mono text-zinc-400">
+                <span>CGPA 6.93</span>
+                <span className="text-violet-400">2023 – Present</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Main Bio Card (spans 2 or 3 columns) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:col-span-2 lg:col-span-3 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 backdrop-blur-xl relative overflow-hidden flex flex-col justify-between group hover:border-violet-500/40 transition-colors"
           >
             <div className="absolute top-0 right-0 -mr-16 -mt-16 h-48 w-48 rounded-full bg-violet-600/10 blur-3xl pointer-events-none" />
 
@@ -282,13 +319,13 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Certifications Banner Card (spans 2 columns) */}
+          {/* Certifications Banner Card (spans full width) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="md:col-span-2 rounded-3xl border border-white/10 bg-gradient-to-r from-violet-950/30 via-zinc-900/40 to-cyan-950/30 p-6 backdrop-blur-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group hover:border-violet-500/40 transition-colors"
+            className="col-span-full rounded-3xl border border-white/10 bg-gradient-to-r from-violet-950/30 via-zinc-900/40 to-cyan-950/30 p-6 backdrop-blur-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group hover:border-violet-500/40 transition-colors"
           >
             <div>
               <div className="flex items-center gap-2 text-xs font-mono text-violet-400">

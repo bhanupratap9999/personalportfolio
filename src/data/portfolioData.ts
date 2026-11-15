@@ -348,3 +348,4 @@ export const NAV_LINKS = [
   { name: "Certifications", href: "#certifications" },
   { name: "Contact", href: "#contact" },
 ];
+

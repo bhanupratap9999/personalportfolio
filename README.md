@@ -155,3 +155,4 @@ vercel
 ## 🎮 Easter Eggs & Shortcuts
 - Press `Ctrl + K` or `Cmd + K` anywhere on the site to open the **Command Palette**.
 - Enter the Konami Code: `↑ ↑ ↓ ↓ ← → ← → B A` on your keyboard to unlock the secret confetti celebration!
+
