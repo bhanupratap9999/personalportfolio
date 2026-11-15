@@ -20,6 +20,7 @@ export const PERSONAL_INFO = {
   githubUsername: "bhanupratap9999",
   linkedin: "https://linkedin.com/in/bhanu-pratap-singh-6482b2298",
   resumePath: "/resume.pdf",
+  portfolioUrl: "https://personalportfolio-mz1h.vercel.app",
   availableForWork: true,
   statusText: "Available for internships & full-time roles",
 };

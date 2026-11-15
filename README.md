@@ -1,6 +1,11 @@
 # Bhanu Pratap Singh — Personal Portfolio Website
 
+[![Live Demo](https://img.shields.io/badge/Live_Site-personalportfolio--mz1h.vercel.app-7928CA?style=for-the-badge&logo=vercel&logoColor=white)](https://personalportfolio-mz1h.vercel.app)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-personalportfolio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bhanupratap9999/personalportfolio)
+
 > A high-end, 2026 design-award caliber personal portfolio for a Full-Stack Developer & GenAI Engineer. Built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
+
+🔗 **Live Production URL**: [https://personalportfolio-mz1h.vercel.app](https://personalportfolio-mz1h.vercel.app)
 
 ---
 

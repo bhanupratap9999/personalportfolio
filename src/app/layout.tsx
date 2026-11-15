@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Bhanu Pratap Singh", url: "https://github.com/bhanupratap9999" }],
   creator: "Bhanu Pratap Singh",
-  metadataBase: new URL("https://bhanupratap.dev"),
+  metadataBase: new URL("https://personalportfolio-mz1h.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bhanupratap.dev",
+    url: "https://personalportfolio-mz1h.vercel.app",
     title: "Bhanu Pratap Singh | Full-Stack & GenAI Engineer",
     description:
       "Full-Stack Developer & GenAI Engineer specializing in Java 21, Spring AI RAG, Next.js 15, and scalable cloud systems.",
