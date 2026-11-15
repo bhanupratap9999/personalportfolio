@@ -117,6 +117,7 @@ export default function Navbar() {
           {/* Resume CTA */}
           <a
             href={PERSONAL_INFO.resumePath}
+            download="Bhanu_Pratap_Singh_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 px-3.5 py-1.5 text-xs font-medium text-white shadow-md shadow-violet-600/25 transition-all hover:scale-[1.02] hover:shadow-violet-600/40 active:scale-95"
@@ -160,6 +161,7 @@ export default function Navbar() {
               <div className="mt-2 border-t border-white/10 pt-3 flex flex-col gap-2">
                 <a
                   href={PERSONAL_INFO.resumePath}
+                  download="Bhanu_Pratap_Singh_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-xl bg-violet-600 py-2.5 text-sm font-semibold text-white shadow-lg"

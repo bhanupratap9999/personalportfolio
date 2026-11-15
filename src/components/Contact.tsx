@@ -13,6 +13,7 @@ import {
   MessageSquare,
   Loader2,
   CheckCircle2,
+  FileDown,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/Icons";
 import { PERSONAL_INFO } from "@/data/portfolioData";
@@ -223,6 +224,28 @@ export default function Contact() {
                 </div>
               </a>
             </div>
+
+            {/* Quick Resume Download Card */}
+            <a
+              href={PERSONAL_INFO.resumePath}
+              download="Bhanu_Pratap_Singh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between rounded-3xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-xl transition-all hover:border-violet-500/40 hover:bg-white/[0.05]"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-600/20 text-violet-400">
+                  <FileDown className="h-5 w-5" />
+                </div>
+                <div>
+                  <div className="text-xs text-zinc-400 font-mono">OFFICIAL RESUME</div>
+                  <div className="text-sm font-semibold text-white">
+                    Download Full CV (PDF)
+                  </div>
+                </div>
+              </div>
+              <ArrowUpRight className="h-4 w-4 text-zinc-400 group-hover:text-white transition-colors" />
+            </a>
 
             {/* Quick response commitment banner */}
             <div className="rounded-2xl border border-white/5 bg-white/[0.02] p-4 text-xs text-zinc-400 flex items-center gap-3">

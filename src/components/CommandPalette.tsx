@@ -149,7 +149,13 @@ export default function CommandPalette() {
         icon: FileDown,
         shortcut: "PDF",
         action: () => {
-          window.open(PERSONAL_INFO.resumePath, "_blank");
+          const a = document.createElement("a");
+          a.href = PERSONAL_INFO.resumePath;
+          a.download = "Bhanu_Pratap_Singh_Resume.pdf";
+          a.target = "_blank";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
           setOpen(false);
         },
       },

@@ -140,6 +140,7 @@ export default function Hero() {
 
               <a
                 href={PERSONAL_INFO.resumePath}
+                download="Bhanu_Pratap_Singh_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/25 active:scale-95"
